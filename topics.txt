@@ -1,3 +1,7 @@
+Το υλικό του μαθήματος στο github
+
+https://github.com/mwysis/MathimaPython2016
+
 Η καλύτερη λύση να τρέξετε το iPython Notebook είναι με το Ubuntu (λειτουργικό σύστημα), που θα το εγκαταστήσετε σαν virtual machine μέσω του (Oracle) VirtualBox
 
 http://www.ubuntu.com/download
@@ -40,3 +44,8 @@ print με % έμμεσος τρόπος [NB P5: 5.5 Μορφοποίηση Συ
 Σύνολα: Συνδυασμοί συνόλων (ένωση, τομή, διαφορά, συμμετρική διαφορά)
 Συμπληρωματικές εντολές: σχόλια (#), zip δυο ισομηκών λιστών σε μια λίστα από ζεύγη-πλειάδες αντίστοιχων στοιχείων
 Βρόχοι: if, elif, else
+
+Έβδομη βδομάδα
+
+while, break, continue, for, μιγαδικοί αριθμοί, comprehension lists and comprehension dictionaries
+
