@@ -1164,13 +1164,35 @@ filteredNegativeList = [-1, -3, -8, -8]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Lysi Giwrgou Delatola</span>
+
+<span class="n">lista1</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Dose tin lista: &#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lista1</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">&gt;=</span><span class="mi">4</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">lista1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dose tin lista: [&apos;aris&apos;,&apos;makis&apos;,&apos;george&apos;,&apos;a&apos;]
+aris
+makis
+george
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1181,6 +1203,50 @@ filteredNegativeList = [-1, -3, -8, -8]
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#913;6:">&#902;&#963;&#954;&#951;&#963;&#951; &#913;6:<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#913;6:">&#182;</a></h4><p>Γράψτε ένα snippet που να ζητά μια λίστα με στοιχεία κάποιες ενδεχομένως επαναλαμβανόμενες λέξεις (strings) και μετά να τυπώνει μια λίστα που αποτελείται από τις μοναδικές λέξεις.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Lysi Giwrgou Delatola</span>
+
+<span class="n">lista2</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Dose tin lista: &#39;</span><span class="p">)</span>
+<span class="n">lista</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">(</span><span class="n">lista2</span><span class="p">):</span>
+    <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">lista</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dose tin lista: [&apos;a&apos;,&apos;ba&apos;,&apos;a&apos;,&apos;opao&apos;]
+[&apos;a&apos;, &apos;opao&apos;, &apos;ba&apos;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Κάντε την προηγούμενη άσκηση χωρίς την χρήση του set</p>
 
 </div>
 </div>
@@ -1426,12 +1492,12 @@ Dwse ena string: q
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;8:">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;8:<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;8:">&#182;</a></h4><p>Να δίνετε ως input κάθε φορά και έναν αριθμό:
-Αν ο αριθμός είναι float να τον κάνετε ακέραιο
-Αν ο αριθμός είναι άρτιος να τον κάνετε τον αμέσως επόμενο περιττό
-Αν ο αριθμός είναι περιττός να τον κάνετε τον αμέσως προηγούμενο άρτιο
-Διακόπτετε με break δινοντας τον αριθμό 0
-Στο τέλος τυπώνετε την λίστα των αριθμών όπως σχηματίσθηκαν</p>
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;8:">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;8:<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;8:">&#182;</a></h4><p>Να δίνετε ως input κάθε φορά και έναν αριθμό:</p>
+<p>Αν ο αριθμός είναι float να τον κάνετε ακέραιο</p>
+<p>Αν ο αριθμός είναι άρτιος να τον κάνετε τον αμέσως επόμενο περιττό</p>
+<p>Αν ο αριθμός είναι περιττός να τον κάνετε τον αμέσως προηγούμενο άρτιο</p>
+<p>Διακόπτετε με break δινοντας τον αριθμό 0</p>
+<p>Στο τέλος τυπώνετε την λίστα των αριθμών όπως σχηματίσθηκαν</p>
 
 </div>
 </div>
@@ -1441,8 +1507,7 @@ Dwse ena string: q
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span>        
-    
+<div class=" highlight hl-ipython2"><pre><span></span> 
 </pre></div>
 
 </div>
@@ -1668,6 +1733,19 @@ Current Letter : s
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1986,6 +2064,50 @@ Current Letter : s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Lysi Nikou Velissariou</span>
+
+<span class="n">lista1</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">a</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;dose enan migadiko: &quot;</span><span class="p">)</span>    
+    <span class="n">b</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;dose enan akomh migadiko: &quot;</span><span class="p">)</span>
+    <span class="n">c</span><span class="o">=</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">10j</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">100</span><span class="p">:</span>
+        <span class="n">lista1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">conjugate</span><span class="p">())</span>    
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">break</span>
+<span class="k">print</span> <span class="n">lista1</span>        
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dose enan migadiko: 2+3j
+dose enan akomh migadiko: 4+6j
+dose enan migadiko: 3+2j
+dose enan akomh migadiko: 2+8j
+dose enan migadiko: 20+30j
+dose enan akomh migadiko: 500+125j
+[(-15-14j), (-15-18j)]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2172,6 +2294,19 @@ Current Letter : s
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -2383,6 +2518,19 @@ Current Letter : s
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
