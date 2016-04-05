@@ -182,7 +182,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -230,7 +230,7 @@ A =
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">r1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
@@ -275,7 +275,7 @@ A =
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">r1</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
@@ -307,7 +307,7 @@ True
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[34]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -334,7 +334,7 @@ True
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">c1</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>   <span class="c1">#c1 = [1, 10, 4, 0.2]</span>
@@ -344,7 +344,7 @@ True
 <span class="n">m1</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span><span class="n">c2</span><span class="p">,</span><span class="n">c3</span><span class="p">,</span><span class="n">c4</span><span class="p">)</span>
 <span class="n">A2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">A2</span>
-<span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">A2</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -365,13 +365,148 @@ True
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-35-74db7df6a864&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">      6</span> A2 <span class="ansiblue">=</span> np<span class="ansiblue">.</span>array<span class="ansiblue">(</span>m1<span class="ansiblue">)</span><span class="ansiblue"></span>
+<span class="ansigreen">      7</span> <span class="ansigreen">print</span> A2<span class="ansiblue"></span>
+<span class="ansigreen">----&gt; 8</span><span class="ansired"> </span>np<span class="ansiblue">.</span>array_equal<span class="ansiblue">(</span><span class="ansiblue">)</span><span class="ansiblue"></span>
 
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
+<span class="ansired">TypeError</span>: array_equal() takes exactly 2 arguments (0 given)</pre>
+</div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="n">r1</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">r2</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span><span class="p">])</span>
+<span class="k">print</span> <span class="n">A</span>
+<span class="n">c1</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">c2</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">c3</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">B</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span><span class="n">c2</span><span class="p">,</span><span class="n">c3</span><span class="p">))</span>
+<span class="k">print</span> <span class="n">B</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[2 3 3]
+ [1 2 2]]
+[[2 3 3]
+ [1 2 2]]
+True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># H prosbasi sto stoixeio 1,2 me tin arithmisi apo 1</span>
+<span class="k">print</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1"># Prosbasi sti lista twn stoixeiwn tis tritis stilis</span>
+<span class="k">print</span> <span class="n">A</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span>
+<span class="c1"># Prosbasi sti lista twn stoixeiwn tis devteris grammis</span>
+<span class="k">print</span> <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span>
+<span class="k">print</span> <span class="n">A</span><span class="p">[:,:]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Megrthos pinaka A.shape pou epistrefei tin dyada: </span>
+<span class="c1"># (arithos grammwn,arithmos stilwn)</span>
+<span class="k">print</span> <span class="s1">&#39;shape.A =&#39;</span><span class="p">,</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span>
+<span class="k">print</span> <span class="s1">&#39;plithos grammwn =&#39;</span><span class="p">,</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span> <span class="s1">&#39;plithos stilwwn =&#39;</span><span class="p">,</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>shape.A = (2, 3)
+plithos grammwn = 2
+plithos stilwwn = 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
+<span class="k">print</span> <span class="n">B</span>
+<span class="c1"># H lista twn diagwniwn stoixeiwn tou pinaka me for loop</span>
+<span class="n">diagwnioi_oroi</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">B</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+    <span class="n">diagwnioi_oroi</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="p">])</span>
+<span class="k">print</span> <span class="n">diagwnioi_oroi</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[1 7 8 3]
+ [3 5 8 6]
+ [1 2 3 4]
+ [3 9 7 6]]
+[1, 5, 3, 6]
+</pre>
+</div>
 </div>
 
 </div>
@@ -570,7 +705,7 @@ True
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -814,6 +949,101 @@ True
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;1">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;1<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;1">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Κατασκευάστε έναν πίνακα M1 4x5 με ακέραια στοιχεία μέσω της μεθόδου random.randrange. Τυπώστε την δεύτερη γραμμή και την τρίτη στήλη του M1.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;2">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;2<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;2">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Κατασκευάστε έναν πίνακα M2 3x2 με ακέραια στοιχεία μέσω της μεθόδου random.choice. Τυπώστε την πρώτη γραμμή και την δεύτερη στήλη του M2.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;3">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;3<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;3">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Κατασκευάστε έναν πίνακα M3 6x6 με ακέραια στοιχεία μέσω της μεθόδου random.sample. Τυπώστε την διαγώνιο του M3.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;4">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;4<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;4">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Κατασκευάστε έναν πίνακα M4 4x4 με στοιχεία πραγματικούς αριθμούς στο διάστημα [-10,10) μέσω της μεθόδου random.uniform. Τυπώστε την αντιδιαγώνιο του M4.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;5">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;5<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;5">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Κατασκευάστε έναν πίνακα M5 3x4 με στοιχεία πραγματικούς αριθμούς μέσω της μεθόδου random.randn. Βρείτε/τυπώστε τη λίστα των στοιχείων του Μ5 που είναι &lt; 0.7 και &gt; 0.3.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="2.-&#928;&#961;&#972;&#963;&#952;&#949;&#963;&#951;,-&#913;&#966;&#945;&#943;&#961;&#949;&#963;&#951;-&#954;&#945;&#953;-&#928;&#959;&#955;&#955;&#945;&#960;&#955;&#945;&#963;&#953;&#945;&#963;&#956;&#972;&#962;-&#928;&#953;&#957;&#940;&#954;&#969;&#957;-&#956;&#949;-&#913;&#961;&#953;&#952;&#956;&#972;">2. &#928;&#961;&#972;&#963;&#952;&#949;&#963;&#951;, &#913;&#966;&#945;&#943;&#961;&#949;&#963;&#951; &#954;&#945;&#953; &#928;&#959;&#955;&#955;&#945;&#960;&#955;&#945;&#963;&#953;&#945;&#963;&#956;&#972;&#962; &#928;&#953;&#957;&#940;&#954;&#969;&#957; &#956;&#949; &#913;&#961;&#953;&#952;&#956;&#972;<a class="anchor-link" href="#2.-&#928;&#961;&#972;&#963;&#952;&#949;&#963;&#951;,-&#913;&#966;&#945;&#943;&#961;&#949;&#963;&#951;-&#954;&#945;&#953;-&#928;&#959;&#955;&#955;&#945;&#960;&#955;&#945;&#963;&#953;&#945;&#963;&#956;&#972;&#962;-&#928;&#953;&#957;&#940;&#954;&#969;&#957;-&#956;&#949;-&#913;&#961;&#953;&#952;&#956;&#972;">&#182;</a></h2>
 </div>
 </div>
@@ -978,7 +1208,7 @@ A + C =
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">D</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> 
@@ -993,7 +1223,7 @@ A + C =
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[20]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[24]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -1181,11 +1411,13 @@ Atranspose =
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[107]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> 
-<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;u =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> 
+<span class="k">print</span> <span class="s1">&#39;v =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> 
 <span class="k">print</span> <span class="s1">&#39;u dot v =&#39;</span>
 <span class="k">print</span> <span class="n">u</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
@@ -1200,8 +1432,12 @@ Atranspose =
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>u dot v =
-[[ 1.92281816]]
+<pre>u =
+[ 0.72566518  0.40820883  0.78948233  0.77116135]
+v =
+[ 0.522227    1.49128771  0.61044608 -0.03423978]
+u dot v =
+1.36143941316
 </pre>
 </div>
 </div>
@@ -1212,11 +1448,13 @@ Atranspose =
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[106]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> 
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;x =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> 
+<span class="k">print</span> <span class="s1">&#39;y =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="k">print</span> <span class="s1">&#39;x dot y =&#39;</span>
 <span class="k">print</span> <span class="n">x</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
 </pre></div>
@@ -1231,8 +1469,12 @@ Atranspose =
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>x dot y =
-[ 5.57962939]
+<pre>x =
+[ 0.72913907  0.76051856 -0.34111573 -1.75005163  1.83821264]
+y =
+[0 1 2 3 4]
+x dot y =
+0.177226725349
 </pre>
 </div>
 </div>
@@ -1246,7 +1488,203 @@ Atranspose =
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="7.-&#927;&#961;&#943;&#950;&#959;&#965;&#963;&#945;-&#928;&#943;&#957;&#945;&#954;&#945;">7. &#927;&#961;&#943;&#950;&#959;&#965;&#963;&#945; &#928;&#943;&#957;&#945;&#954;&#945;<a class="anchor-link" href="#7.-&#927;&#961;&#943;&#950;&#959;&#965;&#963;&#945;-&#928;&#943;&#957;&#945;&#954;&#945;">&#182;</a></h2>
+<h2 id="7.-&#917;&#958;&#969;&#964;&#949;&#961;&#953;&#954;&#972;-&#915;&#953;&#957;&#972;&#956;&#949;&#957;&#959;-&#916;&#965;&#959;-&#916;&#953;&#945;&#957;&#965;&#963;&#956;&#940;&#964;&#969;&#957;">7. &#917;&#958;&#969;&#964;&#949;&#961;&#953;&#954;&#972; &#915;&#953;&#957;&#972;&#956;&#949;&#957;&#959; &#916;&#965;&#959; &#916;&#953;&#945;&#957;&#965;&#963;&#956;&#940;&#964;&#969;&#957;<a class="anchor-link" href="#7.-&#917;&#958;&#969;&#964;&#949;&#961;&#953;&#954;&#972;-&#915;&#953;&#957;&#972;&#956;&#949;&#957;&#959;-&#916;&#965;&#959;-&#916;&#953;&#945;&#957;&#965;&#963;&#956;&#940;&#964;&#969;&#957;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[108]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;u outer product v =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">v</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;v outer product u =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">u</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">v</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">u</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>u outer product v =
+[[ 0.8344029  -0.62108398  0.45246043  0.19006384]
+ [-0.43575818  0.32435461 -0.23629273 -0.09925885]
+ [-0.06882835  0.05123207 -0.03732262 -0.01567801]
+ [ 1.05364843 -0.78427838  0.57134775  0.24000452]]
+v outer product u =
+[[ 0.8344029  -0.43575818 -0.06882835  1.05364843]
+ [-0.62108398  0.32435461  0.05123207 -0.78427838]
+ [ 0.45246043 -0.23629273 -0.03732262  0.57134775]
+ [ 0.19006384 -0.09925885 -0.01567801  0.24000452]]
+True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;x outer product y =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;y outer product x =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">outer</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>x outer product y =
+[[-0.         -0.82815751 -1.65631502 -2.48447252 -3.31263003]
+ [-0.         -0.54307073 -1.08614146 -1.62921219 -2.17228292]
+ [-0.         -1.89878236 -3.79756471 -5.69634707 -7.59512943]
+ [ 0.          0.99719995  1.9943999   2.99159984  3.98879979]
+ [ 0.          0.38156558  0.76313116  1.14469674  1.52626233]]
+y outer product x =
+[[-0.         -0.         -0.          0.          0.        ]
+ [-0.82815751 -0.54307073 -1.89878236  0.99719995  0.38156558]
+ [-1.65631502 -1.08614146 -3.79756471  1.9943999   0.76313116]
+ [-2.48447252 -1.62921219 -5.69634707  2.99159984  1.14469674]
+ [-3.31263003 -2.17228292 -7.59512943  3.98879979  1.52626233]]
+True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="8.-&#925;&#972;&#961;&#956;&#949;&#962;-&#954;&#945;&#953;-A&#960;&#959;&#963;&#964;&#940;&#963;&#949;&#953;&#962;-&#916;&#953;&#945;&#957;&#965;&#963;&#956;&#940;&#964;&#969;&#957;">8. &#925;&#972;&#961;&#956;&#949;&#962; &#954;&#945;&#953; A&#960;&#959;&#963;&#964;&#940;&#963;&#949;&#953;&#962; &#916;&#953;&#945;&#957;&#965;&#963;&#956;&#940;&#964;&#969;&#957;<a class="anchor-link" href="#8.-&#925;&#972;&#961;&#956;&#949;&#962;-&#954;&#945;&#953;-A&#960;&#959;&#963;&#964;&#940;&#963;&#949;&#953;&#962;-&#916;&#953;&#945;&#957;&#965;&#963;&#956;&#940;&#964;&#969;&#957;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.linalg</span> <span class="kn">import</span> <span class="n">norm</span>
+
+<span class="k">print</span> <span class="s1">&#39;Euclidean norm of u =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;L1 norm of u =&#39;</span>
+<span class="k">print</span> <span class="n">norm</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> 
+<span class="k">print</span> <span class="s1">&#39;L2 norm of u =&#39;</span>
+<span class="k">print</span> <span class="n">norm</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;L3 norm of u =&#39;</span>
+<span class="k">print</span> <span class="n">norm</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;Linfinity norm of u =&#39;</span>
+<span class="k">print</span> <span class="n">norm</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Euclidean norm of u =
+2.06455219027
+L1 norm of u =
+3.49201819814
+L2 norm of u =
+2.06455219027
+L3 norm of u =
+1.78639998935
+Linfinity norm of u =
+1.53778369124
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[114]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;Euclidean distance of u, v =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="o">-</span><span class="n">u</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;L1 distance of u, v =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="o">-</span><span class="n">u</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;L2 distance of u, v =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="o">-</span><span class="n">u</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;L3 distance of u, v =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="o">-</span><span class="n">u</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;Linfinity distance of u, v =&#39;</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="o">-</span><span class="n">u</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">u</span><span class="o">-</span><span class="n">v</span><span class="p">)</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="o">-</span><span class="n">u</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Euclidean distance of u, v =
+1.55931567993
+L1 distance of u, v =
+2.51230720993
+L2 distance of u, v =
+1.55931567993
+L3 distance of u, v =
+1.42540590754
+Linfinity distance of u, v =
+1.3817119857
+True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="9.-&#927;&#961;&#943;&#950;&#959;&#965;&#963;&#945;-&#928;&#943;&#957;&#945;&#954;&#945;">9. &#927;&#961;&#943;&#950;&#959;&#965;&#963;&#945; &#928;&#943;&#957;&#945;&#954;&#945;<a class="anchor-link" href="#9.-&#927;&#961;&#943;&#950;&#959;&#965;&#963;&#945;-&#928;&#943;&#957;&#945;&#954;&#945;">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -1363,7 +1801,7 @@ Atranspose =
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="8.-&#906;&#967;&#957;&#959;&#962;-&#928;&#943;&#957;&#945;&#954;&#945;">8. &#906;&#967;&#957;&#959;&#962; &#928;&#943;&#957;&#945;&#954;&#945;<a class="anchor-link" href="#8.-&#906;&#967;&#957;&#959;&#962;-&#928;&#943;&#957;&#945;&#954;&#945;">&#182;</a></h2>
+<h2 id="10.-&#906;&#967;&#957;&#959;&#962;-&#928;&#943;&#957;&#945;&#954;&#945;">10. &#906;&#967;&#957;&#959;&#962; &#928;&#943;&#957;&#945;&#954;&#945;<a class="anchor-link" href="#10.-&#906;&#967;&#957;&#959;&#962;-&#928;&#943;&#957;&#945;&#954;&#945;">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -1402,7 +1840,7 @@ Atranspose =
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="9.-&#913;&#957;&#964;&#953;&#963;&#964;&#961;&#959;&#966;&#942;-&#928;&#943;&#957;&#945;&#954;&#945;">9. &#913;&#957;&#964;&#953;&#963;&#964;&#961;&#959;&#966;&#942; &#928;&#943;&#957;&#945;&#954;&#945;<a class="anchor-link" href="#9.-&#913;&#957;&#964;&#953;&#963;&#964;&#961;&#959;&#966;&#942;-&#928;&#943;&#957;&#945;&#954;&#945;">&#182;</a></h2>
+<h2 id="11.-&#913;&#957;&#964;&#953;&#963;&#964;&#961;&#959;&#966;&#942;-&#928;&#943;&#957;&#945;&#954;&#945;">11. &#913;&#957;&#964;&#953;&#963;&#964;&#961;&#959;&#966;&#942; &#928;&#943;&#957;&#945;&#954;&#945;<a class="anchor-link" href="#11.-&#913;&#957;&#964;&#953;&#963;&#964;&#961;&#959;&#966;&#942;-&#928;&#943;&#957;&#945;&#954;&#945;">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -1449,7 +1887,7 @@ A-1 =
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="10.-&#917;&#960;&#943;&#955;&#965;&#963;&#951;-&#915;&#961;&#945;&#956;&#956;&#953;&#954;&#959;&#973;-&#931;&#965;&#963;&#964;&#942;&#956;&#945;&#964;&#959;&#962;">10. &#917;&#960;&#943;&#955;&#965;&#963;&#951; &#915;&#961;&#945;&#956;&#956;&#953;&#954;&#959;&#973; &#931;&#965;&#963;&#964;&#942;&#956;&#945;&#964;&#959;&#962;<a class="anchor-link" href="#10.-&#917;&#960;&#943;&#955;&#965;&#963;&#951;-&#915;&#961;&#945;&#956;&#956;&#953;&#954;&#959;&#973;-&#931;&#965;&#963;&#964;&#942;&#956;&#945;&#964;&#959;&#962;">&#182;</a></h2>
+<h2 id="12.-&#917;&#960;&#943;&#955;&#965;&#963;&#951;-&#915;&#961;&#945;&#956;&#956;&#953;&#954;&#959;&#973;-&#931;&#965;&#963;&#964;&#942;&#956;&#945;&#964;&#959;&#962;">12. &#917;&#960;&#943;&#955;&#965;&#963;&#951; &#915;&#961;&#945;&#956;&#956;&#953;&#954;&#959;&#973; &#931;&#965;&#963;&#964;&#942;&#956;&#945;&#964;&#959;&#962;<a class="anchor-link" href="#12.-&#917;&#960;&#943;&#955;&#965;&#963;&#951;-&#915;&#961;&#945;&#956;&#956;&#953;&#954;&#959;&#973;-&#931;&#965;&#963;&#964;&#942;&#956;&#945;&#964;&#959;&#962;">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -1482,9 +1920,18 @@ w
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#917;&#960;&#943;&#955;&#965;&#963;&#951;-&#956;&#941;&#963;&#969;-&#945;&#957;&#964;&#943;&#963;&#964;&#961;&#959;&#966;&#959;&#965;-&#960;&#943;&#957;&#945;&#954;&#945;">&#917;&#960;&#943;&#955;&#965;&#963;&#951; &#956;&#941;&#963;&#969; &#945;&#957;&#964;&#943;&#963;&#964;&#961;&#959;&#966;&#959;&#965; &#960;&#943;&#957;&#945;&#954;&#945;<a class="anchor-link" href="#&#917;&#960;&#943;&#955;&#965;&#963;&#951;-&#956;&#941;&#963;&#969;-&#945;&#957;&#964;&#943;&#963;&#964;&#961;&#959;&#966;&#959;&#965;-&#960;&#943;&#957;&#945;&#954;&#945;">&#182;</a></h4>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">r1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
@@ -1531,7 +1978,123 @@ w = 500.357142857
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="11.-&#921;&#948;&#953;&#959;&#964;&#953;&#956;&#941;&#962;-&#954;&#945;&#953;-&#921;&#948;&#953;&#959;&#948;&#953;&#945;&#957;&#973;&#963;&#956;&#945;&#964;&#945;-&#928;&#943;&#957;&#945;&#954;&#945;">11. &#921;&#948;&#953;&#959;&#964;&#953;&#956;&#941;&#962; &#954;&#945;&#953; &#921;&#948;&#953;&#959;&#948;&#953;&#945;&#957;&#973;&#963;&#956;&#945;&#964;&#945; &#928;&#943;&#957;&#945;&#954;&#945;<a class="anchor-link" href="#11.-&#921;&#948;&#953;&#959;&#964;&#953;&#956;&#941;&#962;-&#954;&#945;&#953;-&#921;&#948;&#953;&#959;&#948;&#953;&#945;&#957;&#973;&#963;&#956;&#945;&#964;&#945;-&#928;&#943;&#957;&#945;&#954;&#945;">&#182;</a></h2>
+<h4 id="&#913;&#960;&#949;&#965;&#952;&#949;&#943;&#945;&#962;-&#949;&#960;&#943;&#955;&#965;&#963;&#951;">&#913;&#960;&#949;&#965;&#952;&#949;&#943;&#945;&#962; &#949;&#960;&#943;&#955;&#965;&#963;&#951;<a class="anchor-link" href="#&#913;&#960;&#949;&#965;&#952;&#949;&#943;&#945;&#962;-&#949;&#960;&#943;&#955;&#965;&#963;&#951;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="k">print</span> <span class="s1">&#39;x =&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span> <span class="s1">&#39;y =&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">print</span> <span class="s1">&#39;z =&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">print</span> <span class="s1">&#39;w =&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>x = 801.25
+y = 970.714285714
+z = 253.75
+w = 500.357142857
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="13.-&#932;&#940;&#958;&#951;-(rank)-&#954;&#945;&#953;-&#924;&#951;&#948;&#949;&#957;&#953;&#954;&#972;&#964;&#951;&#964;&#945;-(nullity)-&#928;&#943;&#957;&#945;&#954;&#945;">13. &#932;&#940;&#958;&#951; (rank) &#954;&#945;&#953; &#924;&#951;&#948;&#949;&#957;&#953;&#954;&#972;&#964;&#951;&#964;&#945; (nullity) &#928;&#943;&#957;&#945;&#954;&#945;<a class="anchor-link" href="#13.-&#932;&#940;&#958;&#951;-(rank)-&#954;&#945;&#953;-&#924;&#951;&#948;&#949;&#957;&#953;&#954;&#972;&#964;&#951;&#964;&#945;-(nullity)-&#928;&#943;&#957;&#945;&#954;&#945;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Η <strong>τάξη</strong> (<strong>rank</strong>) ενός πίνακα είναι η διάσταση του υπόχωρου των στηλών του (ή των γραμμών του).</li>
+<li>Ο <strong>πυρήνας</strong> (<strong>kernel</strong>) ενός πίνακα είναι τα διανύσματα που απεικονίζονται από τον πίνακα στο διάνυσμα 0.</li>
+<li>Η <strong>μηδενικότητα</strong> (<strong>nullity</strong>) ενός πίνακα είναι η διάσταση του πυρήνα του.</li>
+<li>Ισχύει ότι τάξη + μηδενικότητα = πλήθος στηλών του πίνακα.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Matrix</span>
+
+<span class="n">B</span> <span class="o">=</span>  <span class="n">Matrix</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="k">print</span> <span class="s1">&#39;B =&#39;</span>
+<span class="k">print</span> <span class="n">B</span>
+<span class="k">print</span> <span class="s1">&#39;rank of B =&#39;</span>
+<span class="k">print</span> <span class="n">B</span><span class="o">.</span><span class="n">rank</span><span class="p">()</span>
+<span class="k">print</span> <span class="s1">&#39;kernel of B =&#39;</span>
+<span class="k">print</span> <span class="n">B</span><span class="o">.</span><span class="n">nullspace</span><span class="p">()</span>
+<span class="n">nullity</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">B</span><span class="o">.</span><span class="n">nullspace</span><span class="p">())</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="k">print</span> <span class="s1">&#39;nullity of B =&#39;</span>
+<span class="k">print</span> <span class="n">nullity</span>
+<span class="k">print</span> <span class="n">B</span><span class="o">.</span><span class="n">rank</span><span class="p">()</span> <span class="o">+</span> <span class="n">nullity</span> <span class="o">==</span> <span class="n">B</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>B =
+Matrix([[1, 2], [2, 4]])
+rank of B =
+1
+kernel of B =
+[Matrix([
+[-2],
+[ 1]])]
+nullity of B =
+1
+True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="14.-&#921;&#948;&#953;&#959;&#964;&#953;&#956;&#941;&#962;-&#954;&#945;&#953;-&#921;&#948;&#953;&#959;&#948;&#953;&#945;&#957;&#973;&#963;&#956;&#945;&#964;&#945;-&#928;&#943;&#957;&#945;&#954;&#945;">14. &#921;&#948;&#953;&#959;&#964;&#953;&#956;&#941;&#962; &#954;&#945;&#953; &#921;&#948;&#953;&#959;&#948;&#953;&#945;&#957;&#973;&#963;&#956;&#945;&#964;&#945; &#928;&#943;&#957;&#945;&#954;&#945;<a class="anchor-link" href="#14.-&#921;&#948;&#953;&#959;&#964;&#953;&#956;&#941;&#962;-&#954;&#945;&#953;-&#921;&#948;&#953;&#959;&#948;&#953;&#945;&#957;&#973;&#963;&#956;&#945;&#964;&#945;-&#928;&#943;&#957;&#945;&#954;&#945;">&#182;</a></h2>
 </div>
 </div>
 </div>

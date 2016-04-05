@@ -49,3 +49,8 @@ print με % έμμεσος τρόπος [NB P5: 5.5 Μορφοποίηση Συ
 
 while, break, continue, for, μιγαδικοί αριθμοί, comprehension lists and comprehension dictionaries
 
+Όγδοη Εβδομάδα
+
+Ασκήσεις στα προηγούμενα
+Γραμμική Άλγεβρα
+
