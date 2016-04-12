@@ -1256,8 +1256,53 @@ george
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;7:">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;7:<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;7:">&#182;</a></h4><p>A person is eligible to be a US Senator who is at least 30 years old and has been a US citizen for at least 9 years. Write an initial version of a program congress.py to obtain age and length of citizenship from the user and print out if a person is eligible to be a Senator or not.</p>
-<p>A person is eligible to be a US Representative who is at least 25 years old and has been a US citizen for at least 7 years. Elaborate your program congress.py so it obtains age and length of citizenship and prints out just the one of the following three statements that is accurate:</p>
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;7a:">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;7a:<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;7a:">&#182;</a></h4><p>A person is eligible to be a US Senator who is at least 30 years old and has been a US citizen for at least 9 years. Write a snippet to obtain age and length of citizenship from the user and print out if a person is eligible to be a Senator or not.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Lysi Nikou Velissariou</span>
+
+<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How old are you? &quot;</span><span class="p">)</span>
+<span class="n">citizenship</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;For how many years have you been a citizen? &quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">30</span> <span class="ow">and</span> <span class="n">citizenship</span> <span class="o">&gt;=</span> <span class="mi">9</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s2">&quot;You are eligible to be a Senator.&quot;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s2">&quot;You are not eligible to be a Senator.&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>How old are you? 30
+For how many years have you been a citizen? 9
+You are eligible to be a Senator.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;7b:">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;7b:<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;7b:">&#182;</a></h4><p>A person is eligible to be a US Representative who is at least 25 years old and has been a US citizen for at least 7 years. Write a snippet that obtains age and length of citizenship and prints out just the one of the following three statements that is accurate:</p>
 <ul>
 <li>You are eligible for both the House and Senate.</li>
 <li>You eligible only for the House.</li>
@@ -1269,13 +1314,39 @@ george
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Lysi Nikou Velissariou</span>
+
+<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How old are you? &quot;</span><span class="p">)</span>
+<span class="n">citizenship</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;For how many years have you been a citizen? &quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">25</span> <span class="ow">and</span> <span class="n">citizenship</span> <span class="o">&gt;=</span> <span class="mi">7</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">30</span> <span class="ow">and</span> <span class="n">citizenship</span> <span class="o">&gt;=</span> <span class="mi">9</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s2">&quot;You are eligible for both the House and Senate.&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s2">&quot;You eligible only for the House.&quot;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s2">&quot;You are ineligible for Congress.&quot;</span> 
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>How old are you? 30
+For how many years have you been a citizen? 9
+You are eligible for both the House and Senate.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1504,13 +1575,45 @@ Dwse ena string: q
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Lythike episis apo Alexi Koutsantwni kai Niko Velissario</span>
+
+<span class="n">lista</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">arithmos</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Dwse enan arithmo: &quot;</span><span class="p">)</span>
+    <span class="n">arithmos</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">arithmos</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">arithmos</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">arithmos</span><span class="o">%</span><span class="k">2</span> == 0:
+            <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">arithmos</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">arithmos</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">break</span>
+<span class="k">print</span> <span class="n">lista</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dwse enan arithmo: 2.2
+Dwse enan arithmo: 35
+Dwse enan arithmo: 42
+Dwse enan arithmo: 7.8
+Dwse enan arithmo: 0
+[1, 36, 41, 8]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1729,20 +1832,47 @@ Current Letter : s
 <li>Χρησιμοποιώντας το continue,  αν φθάσετε ο αριθμός να είναι στο κλειστό διάστημα [20,30], να μην κάνετε τίποτε.</li>
 <li>Αλλιώς να φτιάξετε μια λίστα με τον αρχικό αριθμό και τους διαδοχικά παραγόμενους αριθμούς.</li>
 </ul>
-<p>Πότε θα τελειώσετε; Τυπώστε την τελική λίστα.</p>
+<p>Τυπώστε την τελική λίστα.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Lysi Nikou Velissariou</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Dwse enan arithmo: &quot;</span><span class="p">)</span>
+<span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">]</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">-=</span> <span class="mi">5</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">20</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">-=</span> <span class="mi">5</span>
+        <span class="k">continue</span>
+    <span class="k">else</span><span class="p">:</span>
+       <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">lista</span>    
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dwse enan arithmo: 62
+[62, 57, 52, 47, 42, 37, 32, 17, 12, 7, 2, -3]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1989,7 +2119,7 @@ Current Letter : s
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Enas devteros tropis grafis migadikou arithmou stin Python</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Enas devteros tropos grafis migadikou arithmou stin Python</span>
 
 <span class="n">zz</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">z</span> <span class="o">==</span> <span class="n">zz</span>
@@ -2290,20 +2420,42 @@ dose enan akomh migadiko: 500+125j
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;11:">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;11:<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;11:">&#182;</a></h4><p>Να δίνετε ως input μια λίστα μιγαδικών αριθμών και να εξαγάγετε τη λίστα των τετραγώνων αυτών των αιθμών, μόνο για εκείνους που η απόλυτη τιμή τους είναι μεγαλύτερη του 100.</p>
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;11:">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;11:<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;11:">&#182;</a></h4><p>Να δίνετε ως input μια λίστα μιγαδικών αριθμών και να εξαγάγετε τη λίστα των τετραγώνων αυτών των αριθμών, μόνο για εκείνους που η απόλυτη τιμή τους είναι μεγαλύτερη του 100.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Lysi Alexi Koutsantwni</span>
+
+<span class="n">listam</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Dwse lista migadikwn arithmwn: &quot;</span><span class="p">)</span>
+<span class="n">listat</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">listam</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">listam</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="n">listat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">listam</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">listat</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dwse lista migadikwn arithmwn: [10+2j,10+20j,100+30j,100+300j]
+[(9100+6000j), (-80000+60000j)]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -2521,13 +2673,92 @@ dose enan akomh migadiko: 500+125j
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">list_of_lists</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">173</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">16</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">56</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">]]</span>
+<span class="n">flist</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">list_of_lists</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+<span class="k">print</span> <span class="n">flist</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1, 80, 10, 173, 8, 16, 4, 2, 1, 56, 5, 2, 8, 2]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Eksigisi lysis Askisis 12</span>
+
+<span class="n">flist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">list_of_lists</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+        <span class="n">flist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">flist</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1, 80, 10, 173, 8, 16, 4, 2, 1, 56, 5, 2, 8, 2]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># PROSOXH h antistrofi twn 2 for dinei lathos lista</span>
+
+<span class="n">flist</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">list_of_lists</span><span class="p">]</span>
+<span class="k">print</span> <span class="n">flist</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[8, 8, 8, 8, 8, 8, 2, 2, 2, 2, 2, 2]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -2697,6 +2928,271 @@ dose enan akomh migadiko: 500+125j
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;13:">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;13:<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;13:">&#182;</a></h4><p>Δώστε ως input δυο λίστες, η μια ονομάτων και η δεύτερη ηλικιών, και μέσω του zip γράψτε ένα dictionary comprehension που βάζει ως κλειδιά τα ονόματα και ως τιμές τις ηλικίες τους.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Dwse mia lista onomatwn proswpwn: &quot;</span><span class="p">)</span>
+<span class="n">lista2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Dwse ti lista twn ilikiwn twn proswpwn: &quot;</span><span class="p">)</span>
+<span class="n">dict12</span> <span class="o">=</span><span class="p">{</span><span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">lista1</span><span class="p">,</span><span class="n">lista2</span><span class="p">)}</span>
+<span class="k">print</span> <span class="n">dict12</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dwse mia lista onomatwn proswpwn: [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;] 
+Dwse ti lista twn ilikiwn twn proswpwn: [25,35,45]
+{&apos;a&apos;: 25, &apos;c&apos;: 45, &apos;b&apos;: 35}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Eksigisi lysis Askisis 13</span>
+
+<span class="n">lista1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Dwse mia lista onomatwn proswpwn: &quot;</span><span class="p">)</span>
+<span class="n">lista2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Dwse ti lista twn ilikiwn twn proswpwn: &quot;</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="nb">zip</span><span class="p">(</span><span class="n">lista1</span><span class="p">,</span><span class="n">lista2</span><span class="p">)</span>
+
+<span class="n">dict12</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">lista1</span><span class="p">,</span><span class="n">lista2</span><span class="p">):</span>
+    <span class="n">dict12</span><span class="p">[</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">print</span> <span class="n">dict12</span>
+<span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">lista1</span><span class="p">,</span><span class="n">lista2</span><span class="p">):</span>
+    <span class="n">dict12</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span>
+<span class="k">print</span> <span class="n">dict12</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dwse mia lista onomatwn proswpwn: [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;]
+Dwse ti lista twn ilikiwn twn proswpwn: [1,2,3]
+[(&apos;a&apos;, 1), (&apos;b&apos;, 2), (&apos;c&apos;, 3)]
+{&apos;a&apos;: 1, &apos;c&apos;: 3, &apos;b&apos;: 2}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#913;&#931;&#922;&#919;&#931;&#917;&#921;&#931;-&#913;&#925;&#913;&#931;&#922;&#927;&#928;&#919;&#931;&#919;&#931;">&#913;&#931;&#922;&#919;&#931;&#917;&#921;&#931; &#913;&#925;&#913;&#931;&#922;&#927;&#928;&#919;&#931;&#919;&#931;<a class="anchor-link" href="#&#913;&#931;&#922;&#919;&#931;&#917;&#921;&#931;-&#913;&#925;&#913;&#931;&#922;&#927;&#928;&#919;&#931;&#919;&#931;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;14:">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;14:<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;14:">&#182;</a></h4><p>Δώστε ως input τρεις πραγματικούς αριθμούς a, b, c, με a διάφορο του 0, και γράψτε ένα snippet που υπολογίζει της ρίζες του τριώνυμου ax^2 + bx + c = 0. Χρησιμοποιείστε το "import math" για την τετραγωνική ρίζα math.sqrt().</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="n">a</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;dose a = &#39;</span><span class="p">)</span>
+<span class="n">b</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;dose b = &#39;</span><span class="p">)</span>
+<span class="n">c</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;dose c = &#39;</span><span class="p">)</span>
+<span class="n">d</span><span class="o">=</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span>
+<span class="k">if</span> <span class="n">d</span><span class="o">&gt;</span><span class="mi">0</span> <span class="p">:</span>
+    <span class="n">x1</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="o">+</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">d</span><span class="p">))</span><span class="o">/</span><span class="mf">2.</span><span class="o">*</span><span class="n">a</span>
+    <span class="n">x2</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">d</span><span class="p">))</span><span class="o">/</span><span class="mf">2.</span><span class="o">*</span><span class="n">a</span>
+    <span class="k">print</span> <span class="n">d</span><span class="p">,</span> <span class="s1">&#39;x1=&#39;</span><span class="p">,</span><span class="n">x1</span><span class="p">,</span><span class="s1">&#39;x2=&#39;</span><span class="p">,</span><span class="n">x2</span>
+<span class="k">elif</span> <span class="n">d</span><span class="o">&lt;</span><span class="mi">0</span> <span class="p">:</span>
+    <span class="n">x1</span><span class="o">=</span><span class="nb">complex</span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="p">,</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="o">-</span><span class="n">d</span><span class="p">))</span><span class="o">/</span><span class="mf">2.</span><span class="o">*</span><span class="n">a</span>
+    <span class="n">x2</span><span class="o">=</span><span class="nb">complex</span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="p">,</span><span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="o">-</span><span class="n">d</span><span class="p">))</span><span class="o">/</span><span class="mf">2.</span><span class="o">*</span><span class="n">a</span>
+    <span class="k">print</span> <span class="s1">&#39;x1 = &#39;</span><span class="p">,</span><span class="n">x1</span><span class="p">,</span><span class="s1">&#39; x2 = &#39;</span><span class="p">,</span><span class="n">x2</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">x1</span><span class="o">=-</span><span class="n">b</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span>
+    <span class="n">x2</span><span class="o">=</span><span class="n">x1</span>
+    <span class="k">print</span> <span class="s1">&#39;x1 = &#39;</span><span class="p">,</span><span class="n">x1</span><span class="p">,</span><span class="s1">&#39; x2 = &#39;</span><span class="p">,</span><span class="n">x2</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dose a = 4
+dose b = 10
+dose c = 5
+20 x1= -11.05572809 x2= -28.94427191
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;15:">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;15:<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;15:">&#182;</a></h4><p>Δώστε ως input μια λίστα λέξεων (strings) και γράψτε ένα snippet που βγάζει τη λίστα όσων λέξεων έχουν μήκος τουλάχιστον 2 και το αρχικό γράμμα (σύμβολο) μιας τέτοιας λέξης είναι το ίδιο με το τελικό.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;16">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;16<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;16">&#182;</a></h4><p>Δώστε ως input δυο ακέραιους αριθμούς και χρησιμοποιώντας το while γράψτε ένα snippet που προσθέτει από τον μικρότερο αριθμό 1, τυπώνει τους updated αριθμούς και τερματίζει όταν οι αριθμοί είναι ίσοι.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;17">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;17<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;17">&#182;</a></h4><p>Γράψτε ένα snippet που πρώτα να ζητά τον χρήστη αν θέλει να γράψει μια γραμμή (ως ένα string), π.χ., ζητώντας του να γράψει y στην περίπτωση αυτή. Αμέσως μετά να του ζητά να γράψει την γραμμή που θέλει και ούτω καθεξής. Η διαδικασία τερματίζεται όταν ο χρήστης γράφει ο,τιδήποτε άλλο εκτός του y και τότε εκτυπώνονται οι γραμμές που έχει βάλει.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;18">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;18<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;18">&#182;</a></h4><p>Γράψτε ένα snippet που πρώτα να ζητά τον χρήστη να δώσει 2 αριθμούς x, y και μια λίστα αριθμών aList. Στη συνέχεια για κάθε στοιχείο n της aList, να κάνει update το x ως x + y*n και το y ως y - x/n (ακέραιη διαίρεση) και να τυπώνει τις τελικές τιμές των x και y.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;19">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;19<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;19">&#182;</a></h4><p>Χρησιμοποιώντας το while True και το break, γράψτε ένα snippet που να τυπώνει τους άρτιους αριθμούς από 0 ως 30, τον κάθε έναν σε διαφορετική γραμμή.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;20">'&#913;&#963;&#954;&#951;&#963;&#951; &#913;20<a class="anchor-link" href="#'&#913;&#963;&#954;&#951;&#963;&#951;-&#913;20">&#182;</a></h4><p>Γράψτε ένα snippet που μετατρέπει δυο αριθμούς από καρτεσιανές συντεταγμένες στις αντίστοιχες πολικές συντεταγμένες και αντιστρόφως ένα snippet που μετατρέπει δυο αριθμούς από πολικές συντεταγμένες στις αντίστοιχες καρτεσιανές συντεταγμένες. Χρησιμοποιείστε το inmport numpy, όπου η τετραγωνική ρίζα υπολογίζεται ως numpy.sqrt(), το τόξο εφαπτομένης b/a ως numpy.arctan2(b,a), το συνημήτονο u ως numpy.cos(u) και το ημίτονο u ως numpy.sin(u).</p>
 
 </div>
 </div>

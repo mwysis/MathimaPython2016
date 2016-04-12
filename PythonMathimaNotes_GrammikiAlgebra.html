@@ -182,7 +182,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -230,7 +230,7 @@ A =
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">r1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
@@ -275,7 +275,7 @@ A =
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">r1</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
@@ -307,7 +307,7 @@ True
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[34]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -328,13 +328,13 @@ True
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#922;&#945;&#964;&#945;&#963;&#954;&#949;&#965;&#942;-&#960;&#943;&#957;&#945;&#954;&#945;-&#945;&#960;&#972;-&#955;&#943;&#963;&#964;&#949;&#962;-&#963;&#964;&#951;&#955;&#974;&#957;">&#922;&#945;&#964;&#945;&#963;&#954;&#949;&#965;&#942; &#960;&#943;&#957;&#945;&#954;&#945; &#945;&#960;&#972; &#955;&#943;&#963;&#964;&#949;&#962; &#963;&#964;&#951;&#955;&#974;&#957;<a class="anchor-link" href="#&#922;&#945;&#964;&#945;&#963;&#954;&#949;&#965;&#942;-&#960;&#943;&#957;&#945;&#954;&#945;-&#945;&#960;&#972;-&#955;&#943;&#963;&#964;&#949;&#962;-&#963;&#964;&#951;&#955;&#974;&#957;">&#182;</a></h3>
+<h3 id="&#922;&#945;&#964;&#945;&#963;&#954;&#949;&#965;&#942;-&#960;&#943;&#957;&#945;&#954;&#945;-&#945;&#960;&#972;-&#955;&#943;&#963;&#964;&#949;&#962;-&#963;&#964;&#951;&#955;&#974;&#957;-&#956;&#941;&#963;&#969;-zip">&#922;&#945;&#964;&#945;&#963;&#954;&#949;&#965;&#942; &#960;&#943;&#957;&#945;&#954;&#945; &#945;&#960;&#972; &#955;&#943;&#963;&#964;&#949;&#962; &#963;&#964;&#951;&#955;&#974;&#957; &#956;&#941;&#963;&#969; zip<a class="anchor-link" href="#&#922;&#945;&#964;&#945;&#963;&#954;&#949;&#965;&#942;-&#960;&#943;&#957;&#945;&#954;&#945;-&#945;&#960;&#972;-&#955;&#943;&#963;&#964;&#949;&#962;-&#963;&#964;&#951;&#955;&#974;&#957;-&#956;&#941;&#963;&#969;-zip">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">c1</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>   <span class="c1">#c1 = [1, 10, 4, 0.2]</span>
@@ -344,7 +344,7 @@ True
 <span class="n">m1</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span><span class="n">c2</span><span class="p">,</span><span class="n">c3</span><span class="p">,</span><span class="n">c4</span><span class="p">)</span>
 <span class="n">A2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">A2</span>
-<span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">()</span>
+<span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">A2</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -365,18 +365,13 @@ True
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-35-74db7df6a864&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">      6</span> A2 <span class="ansiblue">=</span> np<span class="ansiblue">.</span>array<span class="ansiblue">(</span>m1<span class="ansiblue">)</span><span class="ansiblue"></span>
-<span class="ansigreen">      7</span> <span class="ansigreen">print</span> A2<span class="ansiblue"></span>
-<span class="ansigreen">----&gt; 8</span><span class="ansired"> </span>np<span class="ansiblue">.</span>array_equal<span class="ansiblue">(</span><span class="ansiblue">)</span><span class="ansiblue"></span>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
-<span class="ansired">TypeError</span>: array_equal() takes exactly 2 arguments (0 given)</pre>
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
 </div>
+
 </div>
 
 </div>
@@ -385,11 +380,10 @@ True
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="n">r1</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">r1</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">r2</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
 <span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span><span class="p">])</span>
 <span class="k">print</span> <span class="n">A</span>
@@ -426,7 +420,7 @@ True
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># H prosbasi sto stoixeio 1,2 me tin arithmisi apo 1</span>
@@ -442,10 +436,28 @@ True
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3
+[3 2]
+[1 2 2]
+[[2 3 3]
+ [1 2 2]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Megrthos pinaka A.shape pou epistrefei tin dyada: </span>
@@ -478,7 +490,7 @@ plithos stilwwn = 3
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
@@ -524,18 +536,97 @@ plithos stilwwn = 3
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">A3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="k">print</span> <span class="n">A3</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
         <span class="n">A3</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
 <span class="k">print</span> <span class="n">A3</span>
 <span class="k">print</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">A3</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+</pre></div>
 
-<span class="n">Ones</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[ 0.  0.  0.  0.]
+ [ 0.  0.  0.  0.]
+ [ 0.  0.  0.  0.]
+ [ 0.  0.  0.  0.]]
+[[  1.    2.    3.    4. ]
+ [ 10.   20.   30.   40. ]
+ [  4.    3.    2.    1. ]
+ [  0.2   0.3   0.4   0.1]]
+False
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">A3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="k">print</span> <span class="n">A3</span>
+<span class="n">A3</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="k">print</span> <span class="n">A3</span>
+<span class="n">A3</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">print</span> <span class="n">A3</span>
+<span class="n">A3</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span><span class="mi">37</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">A3</span>
+<span class="n">A3</span><span class="p">[:,</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">12</span><span class="p">,</span><span class="o">-</span><span class="mi">14</span><span class="p">]</span>
+<span class="k">print</span> <span class="n">A3</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[ 0.  0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.]]
+[[  0.   0.   0.   0.   0.]
+ [  0.   0.  32.   0.   0.]]
+[[  0.   0.   0.   2.   0.]
+ [  0.   0.  32.   0.   0.]]
+[[ 32.  33.  34.  35.  36.]
+ [  0.   0.  32.   0.   0.]]
+[[ 32.  33.  34.  35. -12.]
+ [  0.   0.  32.   0. -14.]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">Ones</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
 <span class="k">print</span> <span class="n">Ones</span>
 </pre></div>
 
@@ -549,13 +640,7 @@ plithos stilwwn = 3
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[[  1.    2.    3.    4. ]
- [ 10.   20.   30.   40. ]
- [  4.    3.    2.    1. ]
- [  0.2   0.3   0.4   0.1]]
-True
-[[ 1.  1.  1.  1.]
- [ 1.  1.  1.  1.]
+<pre>[[ 1.  1.  1.  1.]
  [ 1.  1.  1.  1.]
  [ 1.  1.  1.  1.]]
 </pre>
@@ -568,13 +653,10 @@ True
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">Ones</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
-<span class="k">print</span> <span class="n">Ones</span>
-
-<span class="n">I5</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">I5</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">I5</span>
 <span class="n">I5_1u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">I5_1u</span>
@@ -592,10 +674,7 @@ True
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[[ 1.  1.  1.  1.]
- [ 1.  1.  1.  1.]
- [ 1.  1.  1.  1.]]
-[[ 1.  0.  0.  0.  0.]
+<pre>[[ 1.  0.  0.  0.  0.]
  [ 0.  1.  0.  0.  0.]
  [ 0.  0.  1.  0.  0.]
  [ 0.  0.  0.  1.  0.]
@@ -629,7 +708,7 @@ True
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># An exoume lista n stoixeiwn kai theloume na ta anadiataxoume se m grammes kai k steiles, opou n = m*k</span>
@@ -646,7 +725,7 @@ True
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -663,7 +742,7 @@ True
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">rr</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>
@@ -678,7 +757,7 @@ True
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -690,6 +769,52 @@ True
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;1">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;1<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;1">&#182;</a></h3><p>Ξεκινώντας από τη λίστα των περιττών αριθμών από 0 ως 40, κατασκευάστε έναν πίνακα M1 5x4 με reshape. Τυπώστε την τέταρτη γραμμή και την δεύτερη στήλη του M1.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;2">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;2<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;2">&#182;</a></h3><p>Ξεκινώντας από πίνακα μηδενικών, κατασκευάστε τον πίνακα Μ1 της Άσκησης ΓΑ1.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
 </div>
 </div>
 
@@ -949,16 +1074,7 @@ True
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;1">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;1<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;1">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Κατασκευάστε έναν πίνακα M1 4x5 με ακέραια στοιχεία μέσω της μεθόδου random.randrange. Τυπώστε την δεύτερη γραμμή και την τρίτη στήλη του M1.</p>
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;3">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;3<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;3">&#182;</a></h3><p>Κατασκευάστε έναν πίνακα M3 4x5 με ακέραια στοιχεία μέσω της μεθόδου random.randrange. Τυπώστε την δεύτερη γραμμή και την τρίτη στήλη του M3.</p>
 
 </div>
 </div>
@@ -968,16 +1084,7 @@ True
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;2">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;2<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;2">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Κατασκευάστε έναν πίνακα M2 3x2 με ακέραια στοιχεία μέσω της μεθόδου random.choice. Τυπώστε την πρώτη γραμμή και την δεύτερη στήλη του M2.</p>
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;4">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;4<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;4">&#182;</a></h3><p>Κατασκευάστε έναν πίνακα M4 3x2 με ακέραια στοιχεία μέσω της μεθόδου random.choice. Τυπώστε την πρώτη γραμμή και την δεύτερη στήλη του M4.</p>
 
 </div>
 </div>
@@ -987,16 +1094,7 @@ True
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;3">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;3<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;3">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Κατασκευάστε έναν πίνακα M3 6x6 με ακέραια στοιχεία μέσω της μεθόδου random.sample. Τυπώστε την διαγώνιο του M3.</p>
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;5">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;5<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;5">&#182;</a></h3><p>Κατασκευάστε έναν πίνακα M5 6x6 με ακέραια στοιχεία μέσω της μεθόδου random.sample. Τυπώστε την διαγώνιο του M5.</p>
 
 </div>
 </div>
@@ -1006,16 +1104,7 @@ True
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;4">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;4<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;4">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Κατασκευάστε έναν πίνακα M4 4x4 με στοιχεία πραγματικούς αριθμούς στο διάστημα [-10,10) μέσω της μεθόδου random.uniform. Τυπώστε την αντιδιαγώνιο του M4.</p>
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;6">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;6<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;6">&#182;</a></h3><p>Κατασκευάστε έναν πίνακα M6 4x4 με στοιχεία πραγματικούς αριθμούς στο διάστημα [-10,10) μέσω της μεθόδου random.uniform. Τυπώστε την αντιδιαγώνιο του M6.</p>
 
 </div>
 </div>
@@ -1025,16 +1114,7 @@ True
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;5">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;5<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;5">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Κατασκευάστε έναν πίνακα M5 3x4 με στοιχεία πραγματικούς αριθμούς μέσω της μεθόδου random.randn. Βρείτε/τυπώστε τη λίστα των στοιχείων του Μ5 που είναι &lt; 0.7 και &gt; 0.3.</p>
+<h3 id="&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;7">&#902;&#963;&#954;&#951;&#963;&#951; &#915;&#913;7<a class="anchor-link" href="#&#902;&#963;&#954;&#951;&#963;&#951;-&#915;&#913;7">&#182;</a></h3><p>Κατασκευάστε έναν πίνακα M7 3x4 με στοιχεία πραγματικούς αριθμούς μέσω της μεθόδου random.randn. Βρείτε/τυπώστε τη λίστα των στοιχείων του Μ7 που είναι &lt; 0.7 και &gt; 0.3.</p>
 
 </div>
 </div>
