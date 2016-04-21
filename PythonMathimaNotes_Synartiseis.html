@@ -354,7 +354,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">agree</span><span class="p">():</span>
@@ -375,7 +375,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -420,6 +420,36 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">agree</span><span class="p">():</span>
+    <span class="k">print</span> <span class="s1">&#39;Cool!&#39;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s1">&#39;WTF?&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>WTF?
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -431,15 +461,15 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">echo</span><span class="p">(</span><span class="n">anything</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">anything</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="s1">&#39;is whatever&#39;</span>
 
 <span class="c1"># Apevtheias ektelesi tis synartisis:</span>
-<span class="n">echo</span><span class="p">(</span><span class="s1">&#39;something&#39;</span><span class="p">)</span>
-<span class="c1"># echo(&#39;anything&#39;)</span>
+<span class="c1"># echo(&#39;something&#39;)</span>
+<span class="n">echo</span><span class="p">(</span><span class="s1">&#39;anything&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -450,11 +480,11 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&apos;Something is whatever&apos;</pre>
+<pre>&apos;Anything is whatever&apos;</pre>
 </div>
 
 </div>
@@ -496,6 +526,101 @@ div#notebook {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Anything is whatever
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#919;-&#963;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;-Fibonacci">&#919; &#963;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951; Fibonacci<a class="anchor-link" href="#&#919;-&#963;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;-Fibonacci">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>    
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">a</span><span class="p">,</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+        
+<span class="k">print</span> <span class="n">fib</span>
+<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">fib</span><span class="p">)</span>
+
+<span class="c1"># Για να εκτελέσουμε τη συνάρτηση fib πρέπει να βάλουμε ένα όρισμα, </span>
+<span class="c1"># π.χ., n = 30</span>
+
+<span class="c1"># fib(30)</span>
+<span class="k">print</span> <span class="n">fib</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;function fib at 0x104897de8&gt;
+&lt;type &apos;function&apos;&gt;
+0 1 1 2 3 5 8 13 21 None
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#924;&#953;&#945;-&#955;&#943;&#947;&#959;-&#948;&#953;&#945;&#966;&#959;&#961;&#949;&#964;&#953;&#954;&#942;-&#963;&#965;&#957;&#940;&#961;&#951;&#963;&#951;-Fibonacci">&#924;&#953;&#945; &#955;&#943;&#947;&#959; &#948;&#953;&#945;&#966;&#959;&#961;&#949;&#964;&#953;&#954;&#942; &#963;&#965;&#957;&#940;&#961;&#951;&#963;&#951; Fibonacci<a class="anchor-link" href="#&#924;&#953;&#945;-&#955;&#943;&#947;&#959;-&#948;&#953;&#945;&#966;&#959;&#961;&#949;&#964;&#953;&#954;&#942;-&#963;&#965;&#957;&#940;&#961;&#951;&#963;&#951;-Fibonacci">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">fib1</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>    
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+    <span class="k">return</span> <span class="n">result</span>
+        
+<span class="k">print</span> <span class="n">fib1</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0, 1, 1, 2, 3, 5, 8, 13, 21]
 </pre>
 </div>
 </div>
@@ -644,7 +769,7 @@ None
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Μια συνάρτηση που επιστρέφει ένα λεξικό</span>
@@ -666,11 +791,13 @@ None
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{&apos;dessert&apos;: &apos;frouta&apos;, &apos;entree&apos;: &apos;moussaka&apos;, &apos;wine&apos;: &apos;retsina&apos;}
-</pre>
+<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&apos;dessert&apos;: &apos;bira&apos;, &apos;entree&apos;: &apos;krema&apos;, &apos;wine&apos;: &apos;soublaki&apos;}</pre>
 </div>
+
 </div>
 
 </div>
@@ -761,12 +888,12 @@ None
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># ΑΛΛΑ με ανακατεμένη σειρά παίρνουμε λάθος!!!!</span>
 
-<span class="c1"># menu(&#39;retsina&#39;, entree=&#39;moussaka&#39;, &#39;frouta&#39;)</span>
+<span class="c1"># menu(wine=&#39;retsina&#39;, entree=&#39;moussaka&#39;, &#39;frouta&#39;)</span>
 </pre></div>
 
 </div>
@@ -947,6 +1074,81 @@ None
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#928;&#945;&#961;&#940;&#948;&#949;&#953;&#947;&#956;&#945;-&#963;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;&#962;-&#956;&#949;-&#955;&#943;&#963;&#964;&#945;-&#963;'-&#945;&#965;&#964;&#940;-&#960;&#959;&#965;-&#949;&#954;&#964;&#949;&#955;&#949;&#943;">&#928;&#945;&#961;&#940;&#948;&#949;&#953;&#947;&#956;&#945; &#963;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;&#962; &#956;&#949; &#955;&#943;&#963;&#964;&#945; &#963;' &#945;&#965;&#964;&#940; &#960;&#959;&#965; &#949;&#954;&#964;&#949;&#955;&#949;&#943;<a class="anchor-link" href="#&#928;&#945;&#961;&#940;&#948;&#949;&#953;&#947;&#956;&#945;-&#963;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;&#962;-&#956;&#949;-&#955;&#943;&#963;&#964;&#945;-&#963;'-&#945;&#965;&#964;&#940;-&#960;&#959;&#965;-&#949;&#954;&#964;&#949;&#955;&#949;&#943;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Μια συνάρτηση με πολλά ορίσματα που τα επιστρέφει ως λίστα</span>
+
+<span class="k">def</span> <span class="nf">listing</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span><span class="n">arg2</span><span class="p">,</span><span class="n">arg3</span><span class="p">,</span><span class="n">arg4</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">arg1</span><span class="p">,</span><span class="n">arg2</span><span class="p">,</span><span class="n">arg3</span><span class="p">,</span><span class="n">arg4</span><span class="p">]</span>
+
+<span class="n">listing</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[25]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">listing1</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span><span class="n">arg2</span><span class="p">,</span><span class="n">arg3</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">arg4</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">arg1</span><span class="p">,</span><span class="n">arg2</span><span class="p">,</span><span class="n">arg3</span><span class="p">,</span><span class="n">arg4</span><span class="p">]</span>
+
+<span class="n">listing1</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[26]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&apos;a&apos;, &apos;b&apos;, 3, 4]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#931;&#965;&#947;&#954;&#941;&#957;&#964;&#961;&#969;&#963;&#951;-&#972;&#955;&#969;&#957;-&#964;&#969;&#957;-&#945;&#960;&#955;&#974;&#957;-&#959;&#961;&#953;&#963;&#956;&#940;&#964;&#969;&#957;-&#956;&#949;-*args-&#963;&#949;-&#960;&#955;&#949;&#953;&#940;&#948;&#945;">&#931;&#965;&#947;&#954;&#941;&#957;&#964;&#961;&#969;&#963;&#951; &#972;&#955;&#969;&#957; &#964;&#969;&#957; &#945;&#960;&#955;&#974;&#957; &#959;&#961;&#953;&#963;&#956;&#940;&#964;&#969;&#957; &#956;&#949; *args &#963;&#949; &#960;&#955;&#949;&#953;&#940;&#948;&#945;<a class="anchor-link" href="#&#931;&#965;&#947;&#954;&#941;&#957;&#964;&#961;&#969;&#963;&#951;-&#972;&#955;&#969;&#957;-&#964;&#969;&#957;-&#945;&#960;&#955;&#974;&#957;-&#959;&#961;&#953;&#963;&#956;&#940;&#964;&#969;&#957;-&#956;&#949;-*args-&#963;&#949;-&#960;&#955;&#949;&#953;&#940;&#948;&#945;">&#182;</a></h3>
 </div>
 </div>
@@ -985,7 +1187,7 @@ None
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Σε συντομία μια τέτοια συνάρτηση γράφεται ως εξής με *args</span>
@@ -993,7 +1195,8 @@ None
 <span class="k">def</span> <span class="nf">print_all_args</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="k">print</span> <span class="s1">&#39;The tuple of given arguments is&#39;</span><span class="p">,</span> <span class="n">args</span>
 
-<span class="n">print_all_args</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">print_all_args</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">)</span>
+<span class="n">print_all_args</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1007,8 +1210,53 @@ None
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The tuple of given arguments is (1, 2, 3, &apos;d&apos;, &apos;e&apos;)
+None
+The tuple of given arguments is (10, 200, 3000)
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">listing3</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">args</span>
+
+<span class="k">def</span> <span class="nf">listing2</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">listing3</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="n">listing2</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;)
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[29]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;]</pre>
+</div>
+
 </div>
 
 </div>
@@ -1092,6 +1340,38 @@ All the remaing arguments are (3, &apos;d&apos;, &apos;e&apos;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">dictionarying_kwargs</span><span class="p">(</span><span class="o">**</span><span class="n">kwards</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">kwards</span>
+
+<span class="n">dictionarying_kwargs</span><span class="p">(</span><span class="n">katagwgi</span><span class="o">=</span><span class="s1">&#39;Athina&#39;</span><span class="p">,</span><span class="n">ilikia</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span><span class="n">baros</span><span class="o">=</span><span class="mi">70</span><span class="p">,</span><span class="n">ypsos</span><span class="o">=</span><span class="mf">1.76</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[30]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&apos;baros&apos;: 70, &apos;ilikia&apos;: 18, &apos;katagwgi&apos;: &apos;Athina&apos;, &apos;ypsos&apos;: 1.76}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -1145,7 +1425,7 @@ The dictionary of given keyword arguments is {&apos;dessert&apos;: &apos;krema&a
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">echo</span><span class="p">(</span><span class="n">anything</span><span class="p">):</span>
@@ -1172,6 +1452,9 @@ The dictionary of given keyword arguments is {&apos;dessert&apos;: &apos;krema&a
 <span class="k">print</span> <span class="n">echo</span><span class="p">(</span><span class="s1">&#39;Something else&#39;</span><span class="p">)</span>
 <span class="n">print_if_true</span><span class="p">(</span><span class="s1">&#39;aa&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;aa&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">print_if_true</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">print_if_true</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;whatever&#39;</span><span class="p">)</span>
+<span class="n">print_if_true</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">print_if_true</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1188,6 +1471,9 @@ The dictionary of given keyword arguments is {&apos;dessert&apos;: &apos;krema&a
 Something else
 aa
 Failed to check
+a
+Failed to check
+Failed to check
 </pre>
 </div>
 </div>
@@ -1195,6 +1481,16 @@ Failed to check
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>ΠΡΟΣΟΧΗ: Στην Python το 0 ή το κενό string '' θεωρούνται FALSE, ενώ κάθε άλλος αριθμός και κάθε άλλο string θεωρούνται TRUE.</strong></p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -1372,6 +1668,54 @@ print_if_true(thing, check)
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">capitalizing</span><span class="p">(</span><span class="n">something</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">something</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+
+<span class="c1"># capitalizing(&#39;kati&#39;)</span>
+
+<span class="k">def</span> <span class="nf">cap</span><span class="p">(</span><span class="n">capitalizing</span><span class="p">,</span><span class="n">arg</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">capitalizing</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">cap</span><span class="p">(</span><span class="n">capitalizing</span><span class="p">,</span><span class="s1">&#39;whatever&#39;</span><span class="p">)</span>
+
+<span class="c1"># Ελεγχος strings:</span>
+
+<span class="k">def</span> <span class="nf">capc</span><span class="p">(</span><span class="n">capitalizing</span><span class="p">,</span><span class="n">arg</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">capitalizing</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s1">&#39;Sorry, arg has to be a string.&#39;</span>
+        
+<span class="k">print</span> <span class="n">capc</span><span class="p">(</span><span class="n">capitalizing</span><span class="p">,</span><span class="s1">&#39;string&#39;</span><span class="p">)</span>
+<span class="n">capc</span><span class="p">(</span><span class="n">capitalizing</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Whatever
+String
+Sorry, arg has to be a string.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1475,7 +1819,7 @@ True
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
@@ -1494,6 +1838,9 @@ True
     <span class="k">return</span> <span class="n">inner_factorial</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
 
 <span class="c1"># call the outer function</span>
+<span class="k">print</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">factorial</span><span class="p">(</span><span class="mf">18.</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">factorial</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">factorial</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -1505,7 +1852,16 @@ True
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[29]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>40320
+Sorry, number must be an integer
+Sorry, number must be zero or positive.
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[38]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -1517,6 +1873,16 @@ True
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong> Πώς θα ορίζαμε το παραγοντικό ώστε να καλύπταμε και τους αρνητικούς ακέραιους; </strong></p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1539,7 +1905,7 @@ True
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Μια συνάρτηση με ένα όρισμα και με κλήση μιας απλής εσωτερικής συνάρτησης:</span>
@@ -1549,6 +1915,9 @@ True
     <span class="k">def</span> <span class="nf">addition</span><span class="p">(</span><span class="n">ag3</span><span class="p">,</span><span class="n">arg4</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">arg3</span> <span class="o">+</span> <span class="n">arg4</span>
     <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="n">arg1</span><span class="o">+</span><span class="n">arg2</span><span class="p">)</span>
+
+<span class="c1"># Προσοχή: Αυτό βγάζει λάθος!</span>
+<span class="c1"># cubic(2, 3)</span>
 
 <span class="k">def</span> <span class="nf">cube</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">arg</span> <span class="o">**</span> <span class="mi">3</span>
@@ -1564,7 +1933,7 @@ True
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[30]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[40]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -1710,6 +2079,54 @@ Cherry!
 [(&apos;Jean&apos;, &apos;France&apos;), (&apos;Hans&apos;, &apos;Germany&apos;), (&apos;Elias&apos;, &apos;Greece&apos;), (&apos;John&apos;, &apos;USA&apos;)]
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Τρια άλλα παραδείγματα:</span>
+
+<span class="nb">sum</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">:</span> <span class="n">arg1</span> <span class="o">+</span> <span class="n">arg2</span>
+<span class="k">print</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="n">square</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="n">s2</span> 
+<span class="k">print</span> <span class="n">square</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">powering</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span><span class="n">powerfunc</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">powerfunc</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+
+<span class="n">powering</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>30
+9
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[42]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1024</pre>
+</div>
+
 </div>
 
 </div>
