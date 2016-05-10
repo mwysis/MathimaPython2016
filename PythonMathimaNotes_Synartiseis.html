@@ -252,18 +252,21 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">ti_mera_einai</span><span class="p">():</span>
     <span class="k">return</span> <span class="s1">&#39;Triti&#39;</span>
 
 <span class="c1"># Apevtheias ektelesi tis synartisis:</span>
-<span class="n">ti_mera_einai</span><span class="p">()</span>
+<span class="n">ti_mera_einai</span><span class="p">()</span>             <span class="c1"># Πρώτος τρόπος εκτέλεσης μιας συνάρτησης </span>
+<span class="c1"># outday = ti_mera_einai()  # Δεύτερος Τρόπος (α)</span>
+<span class="c1"># outday                    # Δεύτερος Τρόπος (β)</span>
 
 <span class="c1"># Ektypwsi tis eksodou tis synartisis:</span>
-<span class="c1"># print ti_mera_einai()</span>
+<span class="c1"># print ti_mera_einai()     # Τρίτος Τρόπος </span>
 
+<span class="c1"># ti_mera_einai() == &#39;Devtera&#39;</span>
 <span class="c1"># ti_mera_einai() == &#39;Triti&#39;</span>
 </pre></div>
 
@@ -275,7 +278,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -461,15 +464,18 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">echo</span><span class="p">(</span><span class="n">anything</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">anything</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="s1">&#39;is whatever&#39;</span>
 
 <span class="c1"># Apevtheias ektelesi tis synartisis:</span>
-<span class="c1"># echo(&#39;something&#39;)</span>
 <span class="n">echo</span><span class="p">(</span><span class="s1">&#39;anything&#39;</span><span class="p">)</span>
+<span class="c1"># aa = echo(&#39;anything&#39;)</span>
+<span class="c1"># aa</span>
+<span class="c1"># echo(&#39;something&#39;)</span>
+<span class="c1"># print echo(&#39;something&#39;)</span>
 </pre></div>
 
 </div>
@@ -480,11 +486,44 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>&apos;Anything is whatever&apos;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">echo1</span><span class="p">(</span><span class="n">anything</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">anything</span>
+
+<span class="n">echo1</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="c1"># echo1(&#39;something&#39;)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[18]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[0, 1, 2, 3, 4]</pre>
 </div>
 
 </div>
@@ -533,6 +572,59 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#942;-&#946;&#945;&#952;&#956;&#974;&#957;-Celsius-&#963;&#949;-Fahrenheit">&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#942; &#946;&#945;&#952;&#956;&#974;&#957; Celsius &#963;&#949; Fahrenheit<a class="anchor-link" href="#&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#942;-&#946;&#945;&#952;&#956;&#974;&#957;-Celsius-&#963;&#949;-Fahrenheit">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">celsiustofahrenheit</span><span class="p">(</span><span class="n">degree</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">degree</span><span class="o">*</span><span class="mf">1.8</span> <span class="o">+</span> <span class="mi">32</span>
+
+<span class="n">celsiustofahrenheit</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>68.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Άσκηση</strong>: Να βγαίνει η έξοδος τυπώνοντας</p>
+<p>"x degrees in Celsius are y degrees in Fahrenheit"</p>
+<p>Επίσης, κάντε και τη συνάρτηση της αντίστροφης μετατροπής.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -634,6 +726,61 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#924;&#941;&#964;&#961;&#951;&#963;&#951;-&#964;&#959;&#965;-&#924;&#942;&#954;&#959;&#965;&#962;-&#956;&#953;&#945;&#962;-&#931;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#940;&#962;">&#924;&#941;&#964;&#961;&#951;&#963;&#951; &#964;&#959;&#965; &#924;&#942;&#954;&#959;&#965;&#962; &#956;&#953;&#945;&#962; &#931;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#940;&#962;<a class="anchor-link" href="#&#924;&#941;&#964;&#961;&#951;&#963;&#951;-&#964;&#959;&#965;-&#924;&#942;&#954;&#959;&#965;&#962;-&#956;&#953;&#945;&#962;-&#931;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#940;&#962;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">count_length</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="n">count_length</span><span class="p">(</span><span class="s2">&quot;Mississippi&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>11</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Άσκηση</strong>: Μέτρηση των χαρακτήρων μιας πρότασης χωρίς τα κενά.</p>
+<p>Μέτρηση των ΜΟΝΑΔΙΚΩΝ χαρακτήρων μιας πρότασης χωρίς τα κενά.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#928;&#945;&#961;&#940;&#948;&#949;&#953;&#947;&#956;&#945;-&#963;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;&#962;-&#956;&#949;-&#941;&#957;&#945;-&#972;&#961;&#953;&#963;&#956;&#945;,-&#956;&#949;-&#949;&#954;&#964;&#941;&#955;&#949;&#963;&#951;-&#946;&#961;&#972;&#967;&#959;&#965;-&#954;&#945;&#953;-&#956;&#949;-&#941;&#958;&#959;&#948;&#959;-return-&#964;&#945;-&#945;&#960;&#959;&#964;&#949;&#955;&#941;&#963;&#956;&#945;&#964;&#945;-&#964;&#959;&#965;-&#946;&#961;&#972;&#967;&#959;&#965;">&#928;&#945;&#961;&#940;&#948;&#949;&#953;&#947;&#956;&#945; &#963;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;&#962; &#956;&#949; &#941;&#957;&#945; &#972;&#961;&#953;&#963;&#956;&#945;, &#956;&#949; &#949;&#954;&#964;&#941;&#955;&#949;&#963;&#951; &#946;&#961;&#972;&#967;&#959;&#965; &#954;&#945;&#953; &#956;&#949; &#941;&#958;&#959;&#948;&#959; return &#964;&#945; &#945;&#960;&#959;&#964;&#949;&#955;&#941;&#963;&#956;&#945;&#964;&#945; &#964;&#959;&#965; &#946;&#961;&#972;&#967;&#959;&#965;<a class="anchor-link" href="#&#928;&#945;&#961;&#940;&#948;&#949;&#953;&#947;&#956;&#945;-&#963;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;&#962;-&#956;&#949;-&#941;&#957;&#945;-&#972;&#961;&#953;&#963;&#956;&#945;,-&#956;&#949;-&#949;&#954;&#964;&#941;&#955;&#949;&#963;&#951;-&#946;&#961;&#972;&#967;&#959;&#965;-&#954;&#945;&#953;-&#956;&#949;-&#941;&#958;&#959;&#948;&#959;-return-&#964;&#945;-&#945;&#960;&#959;&#964;&#949;&#955;&#941;&#963;&#956;&#945;&#964;&#945;-&#964;&#959;&#965;-&#946;&#961;&#972;&#967;&#959;&#965;">&#182;</a></h3>
 </div>
 </div>
@@ -689,7 +836,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">commentary1</span><span class="p">(</span><span class="n">color</span><span class="p">):</span>
@@ -719,21 +866,102 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#917;&#973;&#961;&#949;&#963;&#951;-&#966;&#969;&#957;&#951;&#941;&#957;&#964;&#969;&#957;-&#956;&#953;&#945;&#962;-&#955;&#941;&#958;&#951;&#962;-(&#963;&#949;-&#955;&#945;&#964;&#953;&#957;&#953;&#954;&#940;-&#947;&#961;&#940;&#956;&#956;&#945;&#964;&#945;)">&#917;&#973;&#961;&#949;&#963;&#951; &#966;&#969;&#957;&#951;&#941;&#957;&#964;&#969;&#957; &#956;&#953;&#945;&#962; &#955;&#941;&#958;&#951;&#962; (&#963;&#949; &#955;&#945;&#964;&#953;&#957;&#953;&#954;&#940; &#947;&#961;&#940;&#956;&#956;&#945;&#964;&#945;)<a class="anchor-link" href="#&#917;&#973;&#961;&#949;&#963;&#951;-&#966;&#969;&#957;&#951;&#941;&#957;&#964;&#969;&#957;-&#956;&#953;&#945;&#962;-&#955;&#941;&#958;&#951;&#962;-(&#963;&#949;-&#955;&#945;&#964;&#953;&#957;&#953;&#954;&#940;-&#947;&#961;&#940;&#956;&#956;&#945;&#964;&#945;)">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">find_vowels</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="n">all_vowels</span> <span class="o">=</span> <span class="s1">&#39;aeiou&#39;</span>
+    <span class="n">found_vowels</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">all_vowels</span><span class="p">:</span>
+            <span class="n">found_vowels</span> <span class="o">+=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">found_vowels</span>
+
+<span class="n">find_vowels</span><span class="p">(</span><span class="s1">&#39;Mississippi&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
 <div class="output_wrapper">
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Red is the color of a tomato
-None
-</pre>
+<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&apos;iiii&apos;</pre>
 </div>
+
 </div>
 
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Άσκση</strong>: Πώς θα παίρνατε τα ΜΟΝΑΔΙΚΑ φωνήεντα (από μια φορά κάθε φωνήεν);</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#931;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;-&#956;&#949;-&#955;&#941;&#958;&#949;&#953;&#962;-&#954;&#945;&#953;-&#954;&#945;&#964;&#945;&#955;&#942;&#958;&#949;&#953;&#962;">&#931;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951; &#956;&#949; &#955;&#941;&#958;&#949;&#953;&#962; &#954;&#945;&#953; &#954;&#945;&#964;&#945;&#955;&#942;&#958;&#949;&#953;&#962;<a class="anchor-link" href="#&#931;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;-&#956;&#949;-&#955;&#941;&#958;&#949;&#953;&#962;-&#954;&#945;&#953;-&#954;&#945;&#964;&#945;&#955;&#942;&#958;&#949;&#953;&#962;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Άσκηση</strong>: Γράψτε μια συνάρτηση με δυο ορίσματα, 
+μια λίστα λέξεων και μια κατάληξη (γραμμάτων).
+Η έξοδος να είναι μια λίστα που ξεχωρίζει μόνο τις λέξεις
+με την κατάληξη.</p>
+<p>Π.χ. Αν η αρχική λίστα είναι ['George','Paul','Nick','Saul','Dick','Rick']
+και η κατάληξη 'ick', να επιστρέφεται
+['Nick','Dick','Rick']</p>
+<p>Επίσης κάντε το ίδιο για πρόθεμα.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Άσκηση</strong>: Από το βιβλίο Punch &amp; Enbody, κάνετε τις εξής ασκήσεις:</p>
+<ul>
+<li>Σελίδα 272 </li>
+<li>Σελίδες 277-278, τις 3, 4 και 5</li>
+</ul>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -942,6 +1170,124 @@ None
 
 <div class="output_text output_subarea output_execute_result">
 <pre>{&apos;dessert&apos;: &apos;glyko&apos;, &apos;entree&apos;: &apos;makaronada&apos;, &apos;wine&apos;: &apos;ouzo&apos;}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#931;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;-&#956;&#949;-&#941;&#958;&#959;&#948;&#959;-&#955;&#949;&#958;&#953;&#954;&#972;">&#931;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951; &#956;&#949; &#941;&#958;&#959;&#948;&#959; &#955;&#949;&#958;&#953;&#954;&#972;<a class="anchor-link" href="#&#931;&#965;&#957;&#940;&#961;&#964;&#951;&#963;&#951;-&#956;&#949;-&#941;&#958;&#959;&#948;&#959;-&#955;&#949;&#958;&#953;&#954;&#972;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">omades</span><span class="p">(</span><span class="n">like</span><span class="p">,</span><span class="n">dislike</span><span class="p">,</span><span class="n">indifferent</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;omades_pou_mou_aresoun&#39;</span><span class="p">:</span><span class="n">like</span><span class="p">,</span><span class="s1">&#39;omades_pou_den_mou_aresoun&#39;</span><span class="p">:</span><span class="n">dislike</span><span class="p">,</span>
+            <span class="s1">&#39;adiafores&#39;</span><span class="p">:</span><span class="n">indifferent</span><span class="p">}</span>
+
+<span class="c1"># omades([&#39;AEK&#39;,&#39;Xanthi&#39;],[&#39;PAOK&#39;,&#39;Aris&#39;],[&#39;OSFP&#39;,&#39;PAO&#39;])</span>
+<span class="n">omades</span><span class="p">([</span><span class="s1">&#39;OSFP&#39;</span><span class="p">,</span><span class="s1">&#39;PAO&#39;</span><span class="p">],[</span><span class="s1">&#39;AEK&#39;</span><span class="p">,</span><span class="s1">&#39;Xanthi&#39;</span><span class="p">],[</span><span class="s1">&#39;PAOK&#39;</span><span class="p">,</span><span class="s1">&#39;Aris&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[24]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&apos;adiafores&apos;: [&apos;PAOK&apos;, &apos;Aris&apos;],
+ &apos;omades_pou_den_mou_aresoun&apos;: [&apos;AEK&apos;, &apos;Xanthi&apos;],
+ &apos;omades_pou_mou_aresoun&apos;: [&apos;OSFP&apos;, &apos;PAO&apos;]}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">omades</span><span class="p">(</span><span class="n">like</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;PAOK&#39;</span><span class="p">],</span><span class="n">dislike</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Real&#39;</span><span class="p">],</span><span class="n">indifferent</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;AEK&#39;</span><span class="p">]):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;omades_pou_mou_aresoun&#39;</span><span class="p">:</span><span class="n">like</span><span class="p">,</span><span class="s1">&#39;omades_pou_den_mou_aresoun&#39;</span><span class="p">:</span><span class="n">dislike</span><span class="p">,</span>
+            <span class="s1">&#39;adiafores&#39;</span><span class="p">:</span><span class="n">indifferent</span><span class="p">}</span>
+
+<span class="c1"># omades(like=[&#39;PAOK&#39;],dislike=[&#39;Real&#39;],indifferent=[&#39;AEK&#39;])</span>
+<span class="c1"># omades([&#39;PAOK&#39;,&#39;Aris&#39;],[&#39;OSFP&#39;,&#39;PAO&#39;],[&#39;Xanthi&#39;])</span>
+<span class="c1"># omades(like=[&#39;PAOK&#39;,&#39;Aris&#39;],indifferent=[&#39;Xanthi&#39;])</span>
+<span class="n">omades</span><span class="p">(</span><span class="n">like</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;PAOK&#39;</span><span class="p">,</span><span class="s1">&#39;Aris&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&apos;adiafores&apos;: [&apos;AEK&apos;],
+ &apos;omades_pou_den_mou_aresoun&apos;: [&apos;Real&apos;],
+ &apos;omades_pou_mou_aresoun&apos;: [&apos;PAOK&apos;, &apos;Aris&apos;]}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">omades1</span><span class="p">(</span><span class="n">like</span><span class="p">,</span><span class="n">dislike</span><span class="p">,</span><span class="n">indifferent</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;AEK&#39;</span><span class="p">]):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;omades_pou_mou_aresoun&#39;</span><span class="p">:</span><span class="n">like</span><span class="p">,</span><span class="s1">&#39;omades_pou_den_mou_aresoun&#39;</span><span class="p">:</span><span class="n">dislike</span><span class="p">,</span>
+            <span class="s1">&#39;adiafores&#39;</span><span class="p">:</span><span class="n">indifferent</span><span class="p">}</span>
+
+<span class="n">omades1</span><span class="p">(</span><span class="n">like</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;PAOK&#39;</span><span class="p">,</span><span class="s1">&#39;Aris&#39;</span><span class="p">],</span><span class="n">dislike</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;OFH&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[32]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&apos;adiafores&apos;: [&apos;AEK&apos;],
+ &apos;omades_pou_den_mou_aresoun&apos;: [&apos;OFH&apos;],
+ &apos;omades_pou_mou_aresoun&apos;: [&apos;PAOK&apos;, &apos;Aris&apos;]}</pre>
 </div>
 
 </div>
